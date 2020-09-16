@@ -49,9 +49,9 @@
         <p>Click on the buttons inside the tabbed menu for HomeWork Link:</p>
         
         <div class="tab">
-          <button class="tablinks" onclick="openCity(event, 'HTML')">HTML</button>
-          <button class="tablinks" onclick="openCity(event, 'CSS')">CSS</button>
-          <button class="tablinks" onclick="openCity(event, 'GIT')">GIT</button>
+          <button class="tablinks" onclick="openLink(event, 'HTML')">HTML</button>
+          <button class="tablinks" onclick="openLink(event, 'CSS')">CSS</button>
+          <button class="tablinks" onclick="openLink(event, 'GIT')">GIT</button>
         </div>
         
         <div id="HTML" class="tabcontent">
@@ -62,16 +62,14 @@
         
         <div id="CSS" class="tabcontent">
           <h3>CSS</h3>
-          <p>Paris is the capital of France.</p> 
         </div>
         
-        <div id="Tokyo" class="tabcontent">
-          <h3>Tokyo</h3>
-          <p>Tokyo is the capital of Japan.</p>
+        <div id="GIT" class="tabcontent">
+          <h3>GIT</h3>
         </div>
         
         <script>
-        function openCity(evt, cityName) {
+        function openLink(evt, topic) {
           var i, tabcontent, tablinks;
           tabcontent = document.getElementsByClassName("tabcontent");
           for (i = 0; i < tabcontent.length; i++) {
@@ -81,7 +79,7 @@
           for (i = 0; i < tablinks.length; i++) {
             tablinks[i].className = tablinks[i].className.replace(" active", "");
           }
-          document.getElementById(cityName).style.display = "block";
+          document.getElementById(topic).style.display = "block";
           evt.currentTarget.className += " active";
         }
         </script>
