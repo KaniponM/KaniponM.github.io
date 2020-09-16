@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercise 1 - Answer</title>
+  <link rel="stylesheet" href="exercise-1.css">
+
+  <style>
+    #number{
+        width:50px;
+    }
+    select{
+        width: 145px;
+    }
+</style>
+</head>
+<body>
+
+    <h1>Book Flight</h1>
+    <!-- <h2>CODECAMP #7</h2> -->
+    <!-- ------------------- -->
+    <table border="4" bordercolor="blue">
+    <tr>
+      <td><strong>Flying From</strong></td>
+      <td><strong>To</strong></td>
+    </tr>
+    <!-- ------------------- -->
+    <tr>
+      <td>
+          <select name="Flying from">
+              <option value="">Karachi, Pakist</option>
+              <option value="">Islamabad, Pal</option>
+          </select> 
+      </td>
+      <td>
+          <select name="To">
+              <option value="">Islamabad, Pal</option>
+              <option value="">Karachi, Pakist</option>
+          </select> 
+      </td>
+    </tr>
+  <!-- ------------------- -->
+
+    <tr>
+      <td><strong>Departing</strong></td>
+      <td><strong>Return</strong></td>
+    </tr>
+    <tr>
+      <td><input type="date"></td>
+      <td><input type="date"></td>
+    </tr>
+  <!-- ------------------- -->
+
+  <tr>
+    <!-- ------------------- -->
+    <td>
+        <table>
+            <tr>
+                <td><strong>Adult</strong></td>
+                <td><strong>Child</strong></td>
+            </tr>
+            <tr>
+                <td><input type="number" id="number"></td>
+                <td><input type="number" id="number"></td>
+            </tr>
+        </table>
+    </td>
+    <!-- ------------------- -->
+    <td>
+        <table>
+            <tr>
+                <td><strong>Infant</strong></td>
+                <td><strong>Currency</strong></td>
+            </tr>
+            <tr>
+                <td><input type="number" id="number"></td>
+                <td><input type="number" id="number"></td>
+            </tr>
+        </table>
+    </td>
+</tr>
+
+
+
+  </table>
+  <br>
+  <button type="button">Search</button>
+
+
+ 
+</body>
+</html>
