@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<style>
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 50%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+
+input[type=submit]:hover {
+  background-color: #a04545;
+}
+
+input[type=edit] {
+  width: 20%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type=edit]:hover {
+  background-color: #a04545;
+}
+
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+st{
+    color: red;
+}
+#formsetup{
+     background-color:rgb(192,192,192);
+
+}
+</style>
+<body>
+
+<h3>Using CSS to style an HTML Form</h3>
+
+<div>
+  <form >
+      <table>
+    <tr>
+        <td><label for="fname">First Name <st>*</st> :</label> </td>
+        <td><input type="text" id="fname" name="firstname" placeholder="Your name..."></td>
+    </tr>
+    <tr>
+        <td><label for="lname">Last Name <st>*</st> :</label></td>
+        <td><input type="text" id="lname" name="lastname" placeholder="Your last name.."></td>
+    </tr>
+    <tr>
+        <td><label for="url">URL <st>*</st> :</label></td>
+        <td>http://www.wizehive.com/webform/</td>
+        <td><input type="text" id="url" name="weburl" placeholder="Your URL..."></td>
+    </tr>
+    <tr>
+        <td colspan="4" id="formsetup">FORM SETUP</td>
+    </tr>
+    <tr>
+        <td><label for="form">Form :</label></td>
+        <td><select id="form" name="form">
+            <option value="australia">Australia</option>
+            <option value="canada">Canada</option>
+            <option value="usa">USA</option>
+          </select> </td>
+          <td><input type="edit" value='Edit'></td>     
+    </tr>
+    <tr>
+      <td><label for="logo">Logo :</label></td>
+      <td><input type="file"></td>
+      <td><input type="edit" value='Upload'></td>
+    </tr>
+    <tr>
+      <td><label for="template">Template Text :</label></td>
+      <td><select id="template" name="template">
+          <option value="australia">Australia</option>
+          <option value="canada">Canada</option>
+          <option value="usa">USA</option>
+        </select> </td>
+        <td><input type="edit" value='Edit'></td>     
+    </tr>
+    <tr>
+      <td><label for="review">Review Form :</label></td>
+      <td><select id="form" name="review">
+          <option value="australia">Australia</option>
+          <option value="canada">Canada</option>
+          <option value="usa">USA</option>
+        </select> </td>    
+    </tr>
+    <tr>
+      <td><label for="scroe">Review Score  :</label></td>
+      <td><select id="template" name="scroe">
+          <option value="australia">Australia</option>
+          <option value="canada">Canada</option>
+          <option value="usa">USA</option>
+        </select> </td>
+        <td><input type="edit" value='Reload'></td>     
+    </tr>
+    <tr>
+      <td><label for="type">Scoreing Type  :</label></td>
+      <td><select id="template" name="scroe">
+          <option value="australia">Australia</option>
+          <option value="canada">Canada</option>
+          <option value="usa">USA</option>
+        </select> </td>  
+    </tr>
+    <tr>
+      <td><label for="max">Max Score :</label></td>
+      <td><input type="text" value="4.00"></td>
+ 
+    </tr>
+
+
+</table>
+  </form>
+</div>
+
+</body>
+</html>
+
