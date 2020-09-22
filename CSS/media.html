@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Media Query</title>
+    <style>
+        
+        .container{
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-row-gap: 10px;
+            grid-column-gap: 10px;
+            padding: 20px;
+            background-color: green;
+        }
+        .box{border: 1px solid black; background-color: white;}
+        p{text-align: left; border: 1px solid black; width: 95%;}
+        /*Phone*/
+        @media (max-width: 480px) {
+            body {background-color: lightblue;}
+            .container{grid-template-columns: auto;}
+        }
+        /*Tablet*/
+        @media (min-width: 481px) and (max-width: 768px) {
+            body {background-color: red;}
+            .container{grid-template-columns: auto auto;}
+            .box{min-width: 50%;}
+            p{width: 60%;}
+        }
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }   
+    </style>
+</head>
+<body>
+    <center>
+       
+        <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+        <div class="container_grid">
+            <!--Row 1-->
+        <div class="container">
+ 
+            <div class="box">
+                <h1>Topic1</h1>
+                <p>
+                    Whether they're near or far, make Dad a little piece of art from your heart in today’s interactive, digital card-maker Doodle.
+                </p>
+            </div>
+            <div class="box">
+                <h1>Topic2</h1>
+                <p>
+                    Whether they're near or far, make Dad a little piece of art from your heart in today’s interactive, digital card-maker Doodle.
+                </p>
+            </div>
+            <div class="box">
+                <h1>Topic3</h1>
+                <p>
+                    Whether they're near or far, make Dad a little piece of art from your heart in today’s interactive, digital card-maker Doodle.
+                </p>
+            </div>
+            <div class="box">
+                <h1>Topic4</h1>
+                <p>
+                    Whether they're near or far, make Dad a little piece of art from your heart in today’s interactive, digital card-maker Doodle.
+                </p>
+            </div>
+            <div class="box">
+                
+                <p>
+                    <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" style="width: 50%;">
+                </p>
+            </div>
+            <div class="box">
+                <h1>Topic6</h1>
+                <p>
+                    Whether they're near or far, make Dad a little piece of art from your heart in today’s interactive, digital card-maker Doodle.
+                </p>
+            </div>
+            <div class="box">
+                <h1>Topic7</h1>
+                <p>
+                    Whether they're near or far, make Dad a little piece of art from your heart in today’s interactive, digital card-maker Doodle.
+                </p>
+            </div>
+            <div class="box">
+                <h1>Topic8</h1>
+                <p>
+                    Whether they're near or far, make Dad a little piece of art from your heart in today’s interactive, digital card-maker Doodle.
+                </p>
+            </div> 
+            <div class="box">
+                <h1>Topic9</h1>
+                <p>
+                    Whether they're near or far, make Dad a little piece of art from your heart in today’s interactive, digital card-maker Doodle.
+                </p>
+            </div> 
+        </div>
+    </center>
+</body>
+</html>
