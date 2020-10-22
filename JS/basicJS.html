@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //  1. 
+        function draw1(n){
+            let star=''
+            for(let i = 0; i<n; i++){
+                star = star + '*'
+            }
+            console.log(star)
+        }
+        
+        //draw1(5)
+
+        // 2.
+        function draw2(n){
+            let star=''
+            for(let column = 0; column < n; column++){
+                star = star+'*'
+            }
+            for (let row=0;row<n;row++){
+                console.log(star)
+            }
+        }
+        //draw2(5)
+
+        // 3.
+        function draw3(n){
+            let star = ''
+            for(let column = 1; column <= n; column++){
+                star = star+column
+            }
+            for(let row = 1; row <=n; row++){
+            console.log(star)
+            }            
+        }
+        //draw3(5)
+
+        // 4.
+        function draw4(n){
+            let num = ''
+            let star = 1
+            for(let column = 1; column <= n; column++){
+                for(let row = 1; row <= n; row++){
+                    num = num + star
+                }
+                star = star +1
+                num = num +"\n"
+            }  
+        console.log(num)          
+        }
+        //draw4(5)
+
+
+
+    </script>
+
+
+</body>
+</html>
